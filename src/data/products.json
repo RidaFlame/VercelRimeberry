@@ -1,0 +1,274 @@
+[
+  {
+    "id": "avocats",
+    "category": "fruits",
+    "images": [
+      "/images/Fruits/Avocats/Avocats cover.jpg",
+      "/images/Fruits/Avocats/Avocats fresh.jpg",
+      "/images/Fruits/Avocats/Avocats frozen.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Avocats"
+      },
+      "en": {
+        "name": "Avocados"
+      },
+      "ar": {
+        "name": "أفوكادو"
+      }
+    }
+  },
+  {
+    "id": "blackberry",
+    "category": "fruits",
+    "images": [
+      "/images/Fruits/Blackberry/Blackberry cover.jpg",
+      "/images/Fruits/Blackberry/Blackberry fresh.jpg",
+      "/images/Fruits/Blackberry/Blackberry frozen.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Mûre"
+      },
+      "en": {
+        "name": "Blackberry"
+      },
+      "ar": {
+        "name": "توت أسود"
+      }
+    }
+  },
+  {
+    "id": "blueberry",
+    "category": "fruits",
+    "images": [
+      "/images/Fruits/blueberry/blueberry cover.jpg",
+      "/images/Fruits/blueberry/blueberry fresh.jpg",
+      "/images/Fruits/blueberry/blueberry frozen.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Myrtille"
+      },
+      "en": {
+        "name": "Blueberry"
+      },
+      "ar": {
+        "name": "توت أزرق"
+      }
+    }
+  },
+  {
+    "id": "raspberry",
+    "category": "fruits",
+    "images": [
+      "/images/Fruits/Raspberry/Raspberry cover.jpg",
+      "/images/Fruits/Raspberry/Raspberry fresh.jpg",
+      "/images/Fruits/Raspberry/Raspberry frozen.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Framboise"
+      },
+      "en": {
+        "name": "Raspberry"
+      },
+      "ar": {
+        "name": "توت العليق"
+      }
+    }
+  },
+  {
+    "id": "strawberry",
+    "category": "fruits",
+    "images": [
+      "/images/Fruits/strawberry/strawberry cover.jpg",
+      "/images/Fruits/strawberry/strawberry fresh.jpg",
+      "/images/Fruits/strawberry/strawberry frozen.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Fraise"
+      },
+      "en": {
+        "name": "Strawberry"
+      },
+      "ar": {
+        "name": "فراولة"
+      }
+    }
+  },
+  {
+    "id": "poivron",
+    "category": "vegetables",
+    "images": [
+      "/images/vegitables/Poivron/Poivron cover.jpg",
+      "/images/vegitables/Poivron/Poivron fresh.jpg",
+      "/images/vegitables/Poivron/Poivron frozen.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Poivron"
+      },
+      "en": {
+        "name": "Pepper"
+      },
+      "ar": {
+        "name": "فلفل"
+      }
+    }
+  },
+  {
+    "id": "fromage-frais-de-chevre",
+    "category": "cheese",
+    "images": [
+      "/images/cheese/Fromage frais de chèvre/Fromage frais de chèvre cover.jpg",
+      "/images/cheese/Fromage frais de chèvre/Fromage frais de chèvre.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Fromage frais de chèvre"
+      },
+      "en": {
+        "name": "Fresh Goat Cheese"
+      },
+      "ar": {
+        "name": "جبنة الماعز الطازجة"
+      }
+    }
+  },
+  {
+    "id": "gouda",
+    "category": "cheese",
+    "images": [
+      "/images/cheese/Gouda/Gouda cover.jpg",
+      "/images/cheese/Gouda/Gouda.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Gouda"
+      },
+      "en": {
+        "name": "Gouda"
+      },
+      "ar": {
+        "name": "جودة"
+      }
+    }
+  },
+  {
+    "id": "tomme-de-chevre",
+    "category": "cheese",
+    "images": [
+      "/images/cheese/Tomme de chèvre/Tomme de chèvre cover.jpg",
+      "/images/cheese/Tomme de chèvre/Tomme de chèvre.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Tomme de chèvre"
+      },
+      "en": {
+        "name": "Goat Cheese"
+      },
+      "ar": {
+        "name": "جبنة الماعز"
+      }
+    }
+  },
+  {
+    "id": "blackberry-chocolate",
+    "category": "chocolates",
+    "images": [
+      "/images/chokolats/blackberry chocolate/blackberry chocolate cover.jpg",
+      "/images/chokolats/blackberry chocolate/blackberry chocolate.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Chocolat à la mûre"
+      },
+      "en": {
+        "name": "Blackberry Chocolate"
+      },
+      "ar": {
+        "name": "شوكولاتة التوت الأسود"
+      }
+    }
+  },
+  {
+    "id": "blueberry-chocolate",
+    "category": "chocolates",
+    "images": [
+      "/images/chokolats/blueberry chocolate/blueberry chocolate cover.jpg",
+      "/images/chokolats/blueberry chocolate/blueberry chocolate.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Chocolat à la myrtille"
+      },
+      "en": {
+        "name": "Blueberry Chocolate"
+      },
+      "ar": {
+        "name": "شوكولاتة التوت الأزرق"
+      }
+    }
+  },
+  {
+    "id": "raspberry-chocolate",
+    "category": "chocolates",
+    "images": [
+      "/images/chokolats/raspberry chocolate/raspberry chocolate cover.jpg",
+      "/images/chokolats/raspberry chocolate/raspberry chocolate.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Chocolat à la framboise"
+      },
+      "en": {
+        "name": "Raspberry Chocolate"
+      },
+      "ar": {
+        "name": "شوكولاتة التوت العليق"
+      }
+    }
+  },
+  {
+    "id": "strawberry-chocolate",
+    "category": "chocolates",
+    "images": [
+      "/images/chokolats/strawberry chocolate/strawberry chocolate cover.jpg",
+      "/images/chokolats/strawberry chocolate/strawberry chocolate.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Chocolat à la fraise"
+      },
+      "en": {
+        "name": "Strawberry Chocolate"
+      },
+      "ar": {
+        "name": "شوكولاتة الفراولة"
+      }
+    }
+  },
+  {
+    "id": "yaghout",
+    "category": "yogurt",
+    "images": [
+      "/images/yogurt/Yaghout/Yaghout cover.jpg",
+      "/images/yogurt/Yaghout/Yaghout.jpg"
+    ],
+    "translations": {
+      "fr": {
+        "name": "Yaghout"
+      },
+      "en": {
+        "name": "Yoghurt"
+      },
+      "ar": {
+        "name": "ياغوت"
+      }
+    }
+  }
+]

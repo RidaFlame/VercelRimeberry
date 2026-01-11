@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "productionGallery": "Production Gallery",
+    "contact": "Contact us",
+    "quality": "Quality"
+  },
+  "home": {
+    "hero": {
+      "title": "RimeBerry Group",
+      "subtitle": "We are a company specialized in the production and sale of fruits and vegetables, sourced exclusively from our own farms. Our commitment to quality is also reflected in our unique range of chocolates filled with fresh fruits from our harvests. In addition we offer a refined selection of high-quality cheeses.",
+      "cta": "Browse Catalogue"
+    },
+    "values": {
+      "ownFarms": {
+        "title": "Our Own Farms",
+        "description": "All our fruits and vegetables are sourced exclusively from our own farms, ensuring complete control over quality and freshness."
+      },
+      "uniqueChocolates": {
+        "title": "Unique Chocolates",
+        "description": "Our chocolates are filled with fresh fruits from our harvests, creating a unique and delicious experience."
+      },
+      "qualityCheeses": {
+        "title": "Quality Cheeses",
+        "description": "We offer a refined selection of high-quality cheeses, carefully selected to meet the highest standards."
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose Rimeberry groupe?",
+      "subtitle": "From Our Farms to Your Table",
+      "points": [
+        "Fruits and vegetables sourced exclusively from our own farms.",
+        "Unique chocolates filled with fresh fruits from our harvests.",
+        "Refined selection of high-quality cheeses.",
+        "Complete control over the entire production process.",
+        "Commitment to sustainable farming practices.",
+        "Fresh, natural, and high-quality products."
+      ]
+    },
+    "certificates": {
+      "title": "Our Certificates"
+    },
+    "production": {
+      "title": "Our Production"
+    },
+    "ourProductions": {
+      "title": "Our Productions"
+    },
+    "products": {
+      "title": "Our Products",
+      "subtitle": "100% natural products",
+      "viewMore": "View More",
+      "exploreMore": "Explore More"
+    },
+    "stats": {
+      "productsAvailable": "Products available",
+      "customerSatisfaction": "Customer Satisfaction",
+      "frozenTonsDelivered": "Frozen Tons delivered"
+    },
+    "contactSection": {
+      "title": "Contact us"
+    }
+  },
+  "about": {
+    "title": "About us",
+    "description": "We are a company specialized in the production and sale of fruits and vegetables, sourced exclusively from our own farms. Our commitment to quality is also reflected in our unique range of chocolates filled with fresh fruits from our harvests. In addition we offer a refined selection of high-quality cheeses.",
+    "paragraph2": "Our farms are the heart of our operation, ensuring complete control over the entire production process from seed to harvest. This vertical integration allows us to maintain the highest standards of quality and freshness.",
+    "paragraph3": "At RimeBerry Group, we take pride in our:",
+    "points": [
+      "Own farms ensuring quality from source.",
+      "Fresh fruits and vegetables harvested at peak ripeness.",
+      "Unique chocolates filled with fresh fruits from our harvests.",
+      "Refined selection of high-quality cheeses.",
+      "Commitment to sustainable farming practices."
+    ],
+    "paragraph4": "Our passionate team brings together years of experience in agriculture, food processing, and quality control, ensuring that every product meets our exacting standards.",
+    "paragraph5": "From our farms to your table, RimeBerry Group is your trusted partner for fresh, natural, and high-quality products."
+  },
+  "productionGallery": {
+    "title": "Production Gallery",
+    "view": "View",
+    "categories": {
+      "all": "All",
+      "fruits": "Fruits",
+      "vegetables": "Vegetables",
+      "cheese": "Cheese",
+      "yogurt": "Yogurt",
+      "chocolates": "Chocolates"
+    }
+  },
+  "quality": {
+    "title": "Quality",
+    "description": "At Rimeberry groupe, quality isn't just a standard — it's our commitment. We believe that long-term customer satisfaction begins with sustainable practices, rigorous quality control, and continuous improvement in every step of our production.",
+    "paragraph2": "Our fruits and vegetables are grown exclusively on our own farms, ensuring complete control over the entire production process. From seed to harvest, every product is cultivated with care and attention to detail, guaranteeing freshness, flavor, and nutritional value.",
+    "paragraph3": "Our commitment to quality extends to all our products. Our unique range of chocolates is filled with fresh fruits harvested from our farms, ensuring the finest ingredients in every bite. Our selection of high-quality cheeses is carefully curated to meet the highest standards of taste and quality.",
+    "paragraph4": "We work closely with our customers to ensure smooth service, reliable delivery, and full transparency. Our mission is simple: to make healthy, high-quality products from our own farms accessible to everyone, every day.",
+    "paragraph5": "When you choose Rimeberry groupe, you choose a company that puts excellence, trust, and your well-being at the heart of everything we do.",
+    "paragraph6": "Rimeberry groupe – From our farms to your table."
+  },
+  "contact": {
+    "title": "CONTACT US",
+    "subtitle": "Get in touch with us",
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "location": "Location"
+    },
+    "map": {
+      "title": "Our Location",
+      "note": "Visit us at our location",
+      "viewOnMaps": "View on Google Maps"
+    }
+  },
+  "footer": {
+    "contact": "Contact Us",
+    "email": "Email:",
+    "telephone": "Telephone:",
+    "rights": "Copyright © 2026 | Powered by Rimeberry groupe"
+  },
+  "catalogue": {
+    "title": "Our Products",
+    "subtitle": "Discover our wide range of premium frozen products",
+    "all": "All",
+    "fruits": "Fruits",
+    "vegetables": "Vegetables",
+    "cheese": "Cheese",
+    "chocolates": "Chocolates",
+    "yogurt": "Yogurt",
+    "viewDetails": "View Details",
+    "noProducts": "No products found in this category"
+  }
+}

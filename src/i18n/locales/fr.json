@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "productionGallery": "Galerie de Production",
+    "contact": "Contactez-nous",
+    "quality": "Qualité"
+  },
+  "home": {
+    "hero": {
+      "title": "RimeBerry Groupe",
+      "subtitle": "Nous sommes une entreprise spécialisée dans la production et la vente de fruits et légumes, provenant exclusivement de nos propres fermes. Notre engagement envers la qualité se reflète également dans notre gamme unique de chocolats fourrés aux fruits frais de nos récoltes. De plus, nous offrons une sélection raffinée de fromages de haute qualité.",
+      "cta": "Parcourir le Catalogue"
+    },
+    "values": {
+      "ownFarms": {
+        "title": "Nos Propres Fermes",
+        "description": "Tous nos fruits et légumes proviennent exclusivement de nos propres fermes, garantissant un contrôle total sur la qualité et la fraîcheur."
+      },
+      "uniqueChocolates": {
+        "title": "Chocolats Uniques",
+        "description": "Nos chocolats sont fourrés aux fruits frais de nos récoltes, créant une expérience unique et délicieuse."
+      },
+      "qualityCheeses": {
+        "title": "Fromages de Qualité",
+        "description": "Nous offrons une sélection raffinée de fromages de haute qualité, soigneusement sélectionnés pour répondre aux normes les plus élevées."
+      }
+    },
+    "whyChoose": {
+      "title": "Pourquoi Choisir Rimeberry groupe?",
+      "subtitle": "De Nos Fermes à Votre Table",
+      "points": [
+        "Fruits et légumes provenant exclusivement de nos propres fermes.",
+        "Chocolats uniques fourrés aux fruits frais de nos récoltes.",
+        "Sélection raffinée de fromages de haute qualité.",
+        "Contrôle total sur l'ensemble du processus de production.",
+        "Engagement envers des pratiques agricoles durables.",
+        "Produits frais, naturels et de haute qualité."
+      ]
+    },
+    "certificates": {
+      "title": "Nos Certificats"
+    },
+    "production": {
+      "title": "Notre Production"
+    },
+    "ourProductions": {
+      "title": "Nos Productions"
+    },
+    "products": {
+      "title": "Nos Produits",
+      "subtitle": "Produits 100% naturels",
+      "viewMore": "Voir Plus",
+      "exploreMore": "Explorer Plus"
+    },
+    "stats": {
+      "productsAvailable": "Produits disponibles",
+      "customerSatisfaction": "Satisfaction client",
+      "frozenTonsDelivered": "Tonnes surgelées livrées"
+    },
+    "contactSection": {
+      "title": "Contactez-nous"
+    }
+  },
+  "about": {
+    "title": "À propos de nous",
+    "description": "Nous sommes une entreprise spécialisée dans la production et la vente de fruits et légumes, provenant exclusivement de nos propres fermes. Notre engagement envers la qualité se reflète également dans notre gamme unique de chocolats fourrés aux fruits frais de nos récoltes. De plus, nous offrons une sélection raffinée de fromages de haute qualité.",
+    "paragraph2": "Nos fermes sont au cœur de notre activité, garantissant un contrôle total sur l'ensemble du processus de production, de la graine à la récolte. Cette intégration verticale nous permet de maintenir les normes de qualité et de fraîcheur les plus élevées.",
+    "paragraph3": "Chez RimeBerry Groupe, nous sommes fiers de notre:",
+    "points": [
+      "Nos propres fermes garantissant la qualité à la source.",
+      "Fruits et légumes frais récoltés à maturité optimale.",
+      "Chocolats uniques fourrés aux fruits frais de nos récoltes.",
+      "Sélection raffinée de fromages de haute qualité.",
+      "Engagement envers des pratiques agricoles durables."
+    ],
+    "paragraph4": "Notre équipe passionnée réunit des années d'expérience dans l'agriculture, la transformation alimentaire et le contrôle qualité, garantissant que chaque produit répond à nos normes exigeantes.",
+    "paragraph5": "De nos fermes à votre table, RimeBerry Groupe est votre partenaire de confiance pour des produits frais, naturels et de haute qualité."
+  },
+  "productionGallery": {
+    "title": "Galerie de Production",
+    "view": "Voir",
+    "categories": {
+      "all": "Tous",
+      "fruits": "Fruits",
+      "vegetables": "Légumes",
+      "cheese": "Fromage",
+      "yogurt": "Yaourt",
+      "chocolates": "Chocolats"
+    }
+  },
+  "quality": {
+    "title": "Qualité",
+    "description": "Chez Rimeberry groupe, la qualité n'est pas seulement une norme — c'est notre engagement. Nous croyons que la satisfaction à long terme des clients commence par des pratiques durables, un contrôle qualité rigoureux et une amélioration continue à chaque étape de notre production.",
+    "paragraph2": "Nos fruits et légumes sont cultivés exclusivement dans nos propres fermes, garantissant un contrôle total sur l'ensemble du processus de production. De la graine à la récolte, chaque produit est cultivé avec soin et attention aux détails, garantissant fraîcheur, saveur et valeur nutritionnelle.",
+    "paragraph3": "Notre engagement envers la qualité s'étend à tous nos produits. Notre gamme unique de chocolats est fourrée aux fruits frais récoltés dans nos fermes, garantissant les meilleurs ingrédients à chaque bouchée. Notre sélection de fromages de haute qualité est soigneusement sélectionnée pour répondre aux normes les plus élevées de goût et de qualité.",
+    "paragraph4": "Nous travaillons en étroite collaboration avec nos clients pour garantir un service fluide, une livraison fiable et une transparence totale. Notre mission est simple : rendre les produits sains et de haute qualité de nos propres fermes accessibles à tous, chaque jour.",
+    "paragraph5": "Lorsque vous choisissez Rimeberry groupe, vous choisissez une entreprise qui place l'excellence, la confiance et votre bien-être au cœur de tout ce que nous faisons.",
+    "paragraph6": "Rimeberry groupe – De nos fermes à votre table."
+  },
+  "contact": {
+    "title": "CONTACTEZ-NOUS",
+    "subtitle": "Contactez-nous",
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "location": "Localisation"
+    },
+    "map": {
+      "title": "Notre Localisation",
+      "note": "Visitez-nous à notre emplacement",
+      "viewOnMaps": "Voir sur Google Maps"
+    }
+  },
+  "footer": {
+    "contact": "Contactez-nous",
+    "email": "Email:",
+    "telephone": "Téléphone:",
+    "rights": "Copyright © 2026 | Propulsé par Rimeberry groupe"
+  },
+  "catalogue": {
+    "title": "Nos Produits",
+    "subtitle": "Découvrez notre large gamme de produits surgelés premium",
+    "all": "Tous",
+    "fruits": "Fruits",
+    "vegetables": "Légumes",
+    "cheese": "Fromage",
+    "chocolates": "Chocolats",
+    "yogurt": "Yaourt",
+    "viewDetails": "Voir les Détails",
+    "noProducts": "Aucun produit trouvé dans cette catégorie"
+  }
+}
