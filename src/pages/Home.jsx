@@ -8,27 +8,24 @@ import { getImagePath } from '../utils/imagePath';
 const Home = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  const productionImages = [
+    '/images/our productions/0367eec9-30f5-4ab4-a866-4fc493c99f08.jpg',
+    '/images/our productions/04897503-9f29-4366-8e02-bd76e3d91488.jpg',
+    '/images/our productions/49ad81db-eefd-4e01-9b8f-2d0dbba798ef.jpg',
+    '/images/our productions/a25a4d4c-9d78-49be-9b85-5e36a058a65f.jpg',
+    '/images/our productions/a6251cf1-c7d9-49c8-b7ba-7bcf7a9e6799.jpg',
+    '/images/our productions/e9b0fd25-9b0e-4b69-8add-59f80d651c18.jpg',
+    '/images/our productions/f6e8a618-c64d-44f1-93e5-6641d4c1c404.jpg',
+    '/images/our productions/f8034867-7dcb-4fc0-8f76-cb8e30beec03.jpg',
+  ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
-        {/* Animated Background Gradient */}
-        <motion.div 
-          className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-secondary gradient-animated"
-          animate={{
-            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-        />
-        
-        {/* Background Image with Parallax Effect */}
+        {/* Background Image with Parallax Effect - NO OVERLAY */}
         <motion.div
-          className="absolute inset-0 bg-cover bg-center opacity-15 md:opacity-20"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url('${getImagePath('/images/Homepage hero/Gemini_Generated_Image_p5gzk0p5gzk0p5gz.png')}')`,
           }}
@@ -41,37 +38,43 @@ const Home = () => {
             ease: "easeInOut"
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
         
+        {/* Text Container with readable background */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative z-10 text-center px-4 md:px-6 max-w-5xl mx-auto w-full"
+          className="relative z-10 px-4 md:px-6 max-w-5xl mx-auto w-full flex items-center justify-center"
         >
-          {/* Company Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light text-white leading-tight drop-shadow-2xl mb-6 md:mb-8 arabic-text"
-          >
-            {t('home.hero.title')}
-          </motion.h1>
+          <div className="bg-black/70 backdrop-blur-lg rounded-3xl px-6 md:px-10 py-6 md:py-8 border border-white/20 text-center shadow-2xl">
+            {/* Company Name */}
+            <motion.h1
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-white leading-tight mb-4 md:mb-6 arabic-text"
+              style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}
+            >
+              {t('home.hero.title')}
+            </motion.h1>
 
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-body text-base sm:text-lg md:text-xl lg:text-2xl text-tertiary/90 mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed font-light arabic-text"
-          >
-            {t('home.hero.subtitle')}
-          </motion.p>
+            {/* Company Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="font-body text-sm sm:text-base md:text-lg lg:text-xl text-white max-w-3xl mx-auto leading-relaxed font-light arabic-text"
+              style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}
+            >
+              RimeBerry is a company specialized in the distribution and commercialization of fruits and vegetables,
+              carefully selected from trusted agricultural partners. Our distribution expertise enables us to guarantee
+              freshness, quality, and product compliance throughout the entire supply chain.
+            </motion.p>
+          </div>
         </motion.div>
       </section>
 
-      {/* Our Productions Section - Horizontal Scrolling */}
+      {/* Our Productions Section - Vertical Grid with Motion */}
       <section className="py-16 md:py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <motion.div
@@ -84,44 +87,29 @@ const Home = () => {
               {t('home.ourProductions.title')}
             </h2>
           </motion.div>
-          
-          {/* Horizontal Scrolling Container */}
-          <div className="relative">
-            <div className="overflow-x-auto scrollbar-hide pb-4">
-              <div className="flex gap-4 md:gap-6" style={{ width: 'max-content' }}>
-                {[
-                  '/images/our productions/IMG-20260110-WA0026.jpg',
-                  '/images/our productions/IMG-20260110-WA0027.jpg',
-                  '/images/our productions/IMG-20260110-WA0028.jpg',
-                  '/images/our productions/IMG-20260110-WA0029.jpg',
-                  '/images/our productions/IMG-20260110-WA0030.jpg',
-                  '/images/our productions/IMG-20260110-WA0031.jpg',
-                  '/images/our productions/IMG-20260110-WA0032.jpg',
-                  '/images/our productions/IMG-20260110-WA0033.jpg',
-                  '/images/our productions/IMG-20260110-WA0034.jpg'
-                ].map((imagePath, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="flex-shrink-0"
-                  >
-                    <div className="relative w-64 md:w-80 lg:w-96 h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-                      <img
-                        src={imagePath}
-                        alt={`Production ${index + 1}`}
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                        }}
-                      />
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+
+          {/* Horizontal scroll container */}
+          <div className="max-w-full mx-auto overflow-x-auto pb-4 scrollbar-hide" style={{ scrollBehavior: 'smooth' }}>
+            <div className="flex gap-6 md:gap-8">
+              {productionImages.map((imagePath, index) => (
+                <motion.div
+                  key={imagePath}
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.6, delay: index * 0.08 }}
+                  className="flex-shrink-0"
+                >
+                  <img
+                    src={getImagePath(imagePath)}
+                    alt={`Production ${index + 1}`}
+                    className="h-96 w-auto rounded-2xl"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                    }}
+                  />
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
@@ -132,7 +120,7 @@ const Home = () => {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-              {/* Frozen Quality */}
+              {/* Distribution Expertise */}
               <motion.div
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -142,10 +130,11 @@ const Home = () => {
               >
                 <div className="relative z-10 bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-gray-100/50 shadow-sm hover:shadow-xl transition-all duration-500 group-hover:border-primary/20 h-full">
                   <h3 className="font-heading text-2xl md:text-3xl font-light text-secondary mb-4 md:mb-6 group-hover:text-primary transition-colors duration-300 arabic-text leading-tight">
-                    {t('home.values.ownFarms.title')}
+                    Distribution Expertise
                   </h3>
-                  <p className="font-body text-sm md:text-base text-secondary/50 leading-relaxed font-light arabic-text">
-                    {t('home.values.ownFarms.description')}
+                  <p className="font-body text-sm md:text-base text-secondary/50 leading-relaxed font-light">
+                    Our logistics and distribution network ensures that every product reaches our clients fresh,
+                    compliant, and on time across the entire supply chain.
                   </p>
                 </div>
               </motion.div>
@@ -163,7 +152,7 @@ const Home = () => {
                     {t('home.values.uniqueChocolates.title')}
                   </h3>
                   <p className="font-body text-sm md:text-base text-secondary/50 leading-relaxed font-light arabic-text">
-                    {t('home.values.uniqueChocolates.description')}
+                    We distribute high-quality chocolates along with premium cheeses, fresh and frozen fruits and vegetables, offering a complete gourmet selection.
                   </p>
                 </div>
               </motion.div>
@@ -186,87 +175,6 @@ const Home = () => {
                 </div>
               </motion.div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16 md:mb-24"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-secondary mb-6 md:mb-8 arabic-text leading-tight">
-              {t('home.whyChoose.title')}
-            </h2>
-            <p className="font-body text-lg md:text-xl text-secondary/70 max-w-3xl mx-auto font-light arabic-text leading-relaxed mb-8">
-              {t('home.whyChoose.subtitle')}
-            </p>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            <ul className="space-y-4 md:space-y-6">
-              {t('home.whyChoose.points', { returnObjects: true }).map((point, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="flex items-start gap-4"
-                >
-                  <div className="flex-shrink-0 w-2 h-2 bg-primary rounded-full mt-2" />
-                  <p className="font-body text-base md:text-lg text-secondary/70 font-light arabic-text leading-relaxed">
-                    {point}
-                  </p>
-                </motion.li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Certificates Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12 md:mb-16"
-          >
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-light text-secondary mb-6 arabic-text">
-              {t('home.certificates.title')}
-            </h2>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
-            {[
-              '/images/Certificates/BRGS.png',
-              '/images/Certificates/Global gap.png',
-              '/images/Certificates/onssa-logo-png_seeklogo-393584.png'
-            ].map((cert, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-lg p-4 md:p-6 flex items-center justify-center shadow-md hover:shadow-xl transition-shadow duration-300"
-              >
-                <img
-                  src={getImagePath(cert)}
-                  alt={`Certificate ${index + 1}`}
-                  className="max-w-full h-auto object-contain"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                  }}
-                />
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

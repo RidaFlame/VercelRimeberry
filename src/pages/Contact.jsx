@@ -7,8 +7,15 @@ const Contact = () => {
   const { t } = useTranslation();
   const [copied, setCopied] = useState({ email: false, phone: false, whatsapp: false });
 
-  const email = 'rimeberry.groupe@gmail.com';
-  const phone = '06 61 79 46 30';
+  const emails = [
+    'info@rimeberry.com',
+    'rimeberry.groupe@gmail.com',
+    'ahmederrati.rimeberry@gmail.com'
+  ];
+  const phones = [
+    { display: '+212 661794630', tel: '212661794630' },
+    { display: '+212 663202070', tel: '212663202070' }
+  ];
   const whatsappNumber = '212661794630';
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   const instagramUrl = 'https://www.instagram.com/rimeberry.groupe?igsh=MW1iMjBicWM3Z2RnaQ%3D%3D&utm_source=qr';
@@ -44,7 +51,7 @@ const Contact = () => {
 
         {/* Contact Information Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-          {/* Email Card */}
+          {/* Emails Card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,30 +66,34 @@ const Contact = () => {
                 {t('contact.info.email', 'Email')}
               </h3>
             </div>
-            <div className="flex items-center justify-between gap-4">
-              <a
-                href={`mailto:${email}`}
-                className="font-body text-secondary/80 hover:text-primary transition-colors break-all arabic-text"
-              >
-                {email}
-              </a>
-              <motion.button
-                onClick={() => copyToClipboard(email, 'email')}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="flex-shrink-0 p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                aria-label="Copy email"
-              >
-                {copied.email ? (
-                  <Check size={20} className="text-green-600" />
-                ) : (
-                  <Copy size={20} className="text-secondary/60" />
-                )}
-              </motion.button>
+            <div className="space-y-3">
+              {emails.map((email, index) => (
+                <div key={index} className="flex items-center justify-between gap-4">
+                  <a
+                    href={`mailto:${email}`}
+                    className="font-body text-sm md:text-base text-secondary/80 hover:text-primary transition-colors break-all arabic-text"
+                  >
+                    {email}
+                  </a>
+                  <motion.button
+                    onClick={() => copyToClipboard(email, 'email')}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="flex-shrink-0 p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                    aria-label={`Copy email ${index + 1}`}
+                  >
+                    {copied.email ? (
+                      <Check size={18} className="text-green-600" />
+                    ) : (
+                      <Copy size={18} className="text-secondary/60" />
+                    )}
+                  </motion.button>
+                </div>
+              ))}
             </div>
           </motion.div>
 
-          {/* Phone Card */}
+          {/* Phones Card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,26 +108,30 @@ const Contact = () => {
                 {t('contact.info.phone', 'Phone')}
               </h3>
             </div>
-            <div className="flex items-center justify-between gap-4">
-              <a
-                href={`tel:+${whatsappNumber}`}
-                className="font-body text-secondary/80 hover:text-primary transition-colors arabic-text"
-              >
-                {phone}
-              </a>
-              <motion.button
-                onClick={() => copyToClipboard(phone, 'phone')}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="flex-shrink-0 p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                aria-label="Copy phone"
-              >
-                {copied.phone ? (
-                  <Check size={20} className="text-green-600" />
-                ) : (
-                  <Copy size={20} className="text-secondary/60" />
-                )}
-              </motion.button>
+            <div className="space-y-3">
+              {phones.map((phone, index) => (
+                <div key={index} className="flex items-center justify-between gap-4">
+                  <a
+                    href={`tel:+${phone.tel}`}
+                    className="font-body text-sm md:text-base text-secondary/80 hover:text-primary transition-colors arabic-text"
+                  >
+                    {phone.display}
+                  </a>
+                  <motion.button
+                    onClick={() => copyToClipboard(phone.display, 'phone')}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="flex-shrink-0 p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                    aria-label={`Copy phone ${index + 1}`}
+                  >
+                    {copied.phone ? (
+                      <Check size={18} className="text-green-600" />
+                    ) : (
+                      <Copy size={18} className="text-secondary/60" />
+                    )}
+                  </motion.button>
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -142,10 +157,10 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="font-body text-secondary/80 hover:text-[#25D366] transition-colors arabic-text"
               >
-                {phone}
+                {phones[0].display}
               </a>
               <motion.button
-                onClick={() => copyToClipboard(phone, 'whatsapp')}
+                onClick={() => copyToClipboard(phones[0].display, 'whatsapp')}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="flex-shrink-0 p-2 hover:bg-gray-100 rounded-lg transition-colors"

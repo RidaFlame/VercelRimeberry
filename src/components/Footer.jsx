@@ -20,22 +20,33 @@ const Footer = () => {
             {t('footer.contact')}
           </h3>
           <div className="space-y-4 font-body text-base">
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-3">
                 <Mail size={20} className="text-tertiary flex-shrink-0" />
-                <div className="text-tertiary/90 arabic-text text-left">
-                  <a href="mailto:rimeberry.groupe@gmail.com" className="hover:text-white transition-colors">
+                <div className="text-tertiary/90 arabic-text text-center space-y-1">
+                  <a href="mailto:info@rimeberry.com" className="hover:text-white transition-colors block">
+                    info@rimeberry.com
+                  </a>
+                  <a href="mailto:rimeberry.groupe@gmail.com" className="hover:text-white transition-colors block">
                     rimeberry.groupe@gmail.com
+                  </a>
+                  <a href="mailto:ahmederrati.rimeberry@gmail.com" className="hover:text-white transition-colors block">
+                    ahmederrati.rimeberry@gmail.com
                   </a>
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center gap-3">
-              <Phone size={20} className="text-tertiary flex-shrink-0" />
-              <div className="text-tertiary/90 arabic-text">
-                <a href="tel:+212661794630" className="hover:text-white transition-colors">
-                  {t('footer.telephone')} 06 61 79 46 30
-                </a>
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex items-center gap-3">
+                <Phone size={20} className="text-tertiary flex-shrink-0" />
+                <div className="text-tertiary/90 arabic-text space-y-1">
+                  <a href="tel:+212661794630" className="hover:text-white transition-colors block">
+                    {t('footer.telephone')} +212 661794630
+                  </a>
+                  <a href="tel:+212663202070" className="hover:text-white transition-colors block">
+                    {t('footer.telephone')} +212 663202070
+                  </a>
+                </div>
               </div>
             </div>
             <div className="text-tertiary/90 arabic-text text-center text-sm mt-2">
