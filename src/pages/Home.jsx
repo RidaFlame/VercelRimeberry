@@ -8,15 +8,18 @@ import { getImagePath } from '../utils/imagePath';
 const Home = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+  
+  // Updated order: Images 4, 6, and 8 moved to the end
   const productionImages = [
-    '/images/our productions/0367eec9-30f5-4ab4-a866-4fc493c99f08.jpg',
-    '/images/our productions/04897503-9f29-4366-8e02-bd76e3d91488.jpg',
-    '/images/our productions/49ad81db-eefd-4e01-9b8f-2d0dbba798ef.jpg',
-    '/images/our productions/a25a4d4c-9d78-49be-9b85-5e36a058a65f.jpg',
-    '/images/our productions/a6251cf1-c7d9-49c8-b7ba-7bcf7a9e6799.jpg',
-    '/images/our productions/e9b0fd25-9b0e-4b69-8add-59f80d651c18.jpg',
-    '/images/our productions/f6e8a618-c64d-44f1-93e5-6641d4c1c404.jpg',
-    '/images/our productions/f8034867-7dcb-4fc0-8f76-cb8e30beec03.jpg',
+    '/images/our productions/0367eec9-30f5-4ab4-a866-4fc493c99f08.jpg', // 1
+    '/images/our productions/04897503-9f29-4366-8e02-bd76e3d91488.jpg', // 2
+    '/images/our productions/49ad81db-eefd-4e01-9b8f-2d0dbba798ef.jpg', // 3
+    '/images/our productions/a6251cf1-c7d9-49c8-b7ba-7bcf7a9e6799.jpg', // 5
+    '/images/our productions/f6e8a618-c64d-44f1-93e5-6641d4c1c404.jpg', // 7
+    // The requested images moved to the last 3 spots:
+    '/images/our productions/a25a4d4c-9d78-49be-9b85-5e36a058a65f.jpg', // 4
+    '/images/our productions/e9b0fd25-9b0e-4b69-8add-59f80d651c18.jpg', // 6
+    '/images/our productions/f8034867-7dcb-4fc0-8f76-cb8e30beec03.jpg', // 8
   ];
 
   return (
