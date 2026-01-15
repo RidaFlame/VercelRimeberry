@@ -1,7 +1,7 @@
 import { MessageCircle, Instagram } from 'lucide-react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '212661794630'; // 06 61 79 46 30
+  const phoneNumber = '212669657677'; // 06 69 65 76 77
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
   const instagramUrl = 'https://www.instagram.com/rimeberry.groupe?igsh=MW1iMjBicWM3Z2RnaQ%3D%3D&utm_source=qr';
 

@@ -13,10 +13,10 @@ const Contact = () => {
     'ahmederrati.rimeberry@gmail.com'
   ];
   const phones = [
-    { display: '+212 661794630', tel: '212661794630' },
+    { display: '+212 669657677', tel: '212669657677' },
     { display: '+212 663202070', tel: '212663202070' }
   ];
-  const whatsappNumber = '212661794630';
+  const whatsappNumber = '212669657677';
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
   const instagramUrl = 'https://www.instagram.com/rimeberry.groupe?igsh=MW1iMjBicWM3Z2RnaQ%3D%3D&utm_source=qr';
 

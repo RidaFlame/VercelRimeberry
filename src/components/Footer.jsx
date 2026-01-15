@@ -40,8 +40,8 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone size={20} className="text-tertiary flex-shrink-0" />
                 <div className="text-tertiary/90 arabic-text space-y-1">
-                  <a href="tel:+212661794630" className="hover:text-white transition-colors block">
-                    {t('footer.telephone')} +212 661794630
+                  <a href="tel:+212669657677" className="hover:text-white transition-colors block">
+                    {t('footer.telephone')} +212 669657677
                   </a>
                   <a href="tel:+212663202070" className="hover:text-white transition-colors block">
                     {t('footer.telephone')} +212 663202070
